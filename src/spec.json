@@ -252,5 +252,14 @@
   "theme": {
     "palette": "blu-istituzionale",
     "fonts": "istituzionale"
-  }
+  },
+  "custom": [
+    {
+      "name": "ControlloCelleVuote",
+      "title": "Controllo celle non compilate",
+      "description": "Tabella di controllo aggiornata dai dati in memoria, con segnalazione dei valori vuoti o composti soltanto da spazi.",
+      "role": "section",
+      "position": "bottom"
+    }
+  ]
 }
