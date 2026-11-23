@@ -1,0 +1,256 @@
+{
+  "title": "Confronto e assemblaggio di fogli di calcolo",
+  "description": "Area di lavoro per confrontare due file di foglio di calcolo, rivedere le differenze e assemblare un unico risultato usando dati e organizzazioni di fantasia.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "panoramica",
+      "title": "Panoramica",
+      "description": "Stato dei confronti e dei risultati assemblati.",
+      "metrics": [
+        {
+          "label": "Confronti pronti",
+          "value": "8"
+        },
+        {
+          "label": "Da rivedere",
+          "value": "3"
+        },
+        {
+          "label": "Risultati assemblati",
+          "value": "12"
+        },
+        {
+          "label": "Ultimo aggiornamento",
+          "value": "Oggi"
+        }
+      ],
+      "columns": [
+        "Confronto",
+        "File sorgente A",
+        "File sorgente B",
+        "Differenze",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Riepilogo Lumo",
+          "Inventario Lumo A",
+          "Inventario Lumo B",
+          "4",
+          "Pronto"
+        ],
+        [
+          "Catalogo Vela",
+          "Catalogo Vela A",
+          "Catalogo Vela B",
+          "2",
+          "Da rivedere"
+        ],
+        [
+          "Scorte Nubi",
+          "Scorte Nubi A",
+          "Scorte Nubi B",
+          "0",
+          "Assemblato"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "confronti",
+      "title": "Confronti",
+      "description": "Cerca e filtra i confronti disponibili; apri una riga per esaminarne le differenze.",
+      "metrics": [
+        {
+          "label": "Confronti totali",
+          "value": "23"
+        },
+        {
+          "label": "Pronti",
+          "value": "15"
+        },
+        {
+          "label": "In revisione",
+          "value": "5"
+        }
+      ],
+      "columns": [
+        "Confronto",
+        "File sorgente A",
+        "File sorgente B",
+        "Organizzazione",
+        "Stato",
+        "Differenze"
+      ],
+      "rows": [
+        [
+          "Riepilogo Lumo",
+          "Inventario Lumo A",
+          "Inventario Lumo B",
+          "Officina Lumo",
+          "Pronto",
+          "4"
+        ],
+        [
+          "Catalogo Vela",
+          "Catalogo Vela A",
+          "Catalogo Vela B",
+          "Emporio Vela",
+          "Da rivedere",
+          "2"
+        ],
+        [
+          "Scorte Nubi",
+          "Scorte Nubi A",
+          "Scorte Nubi B",
+          "Deposito Nubi",
+          "Assemblato",
+          "0"
+        ],
+        [
+          "Ordini Timo",
+          "Ordini Timo A",
+          "Ordini Timo B",
+          "Laboratorio Timo",
+          "Pronto",
+          "7"
+        ],
+        [
+          "Listino Sera",
+          "Listino Sera A",
+          "Listino Sera B",
+          "Bottega Sera",
+          "In elaborazione",
+          "1"
+        ]
+      ],
+      "form": [
+        "Confronto",
+        "File sorgente A",
+        "File sorgente B",
+        "Organizzazione",
+        "Stato",
+        "Differenze"
+      ]
+    },
+    {
+      "id": "differenze",
+      "title": "Differenze",
+      "description": "Esamina le righe rilevate come aggiunte, modificate o assenti tra i due file.",
+      "metrics": [
+        {
+          "label": "Aggiunte",
+          "value": "3"
+        },
+        {
+          "label": "Modificate",
+          "value": "4"
+        },
+        {
+          "label": "Assenti",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Riga",
+        "Campo",
+        "Valore in A",
+        "Valore in B",
+        "Tipo differenza",
+        "Decisione"
+      ],
+      "rows": [
+        [
+          "12",
+          "Quantità",
+          "18",
+          "20",
+          "Modificata",
+          "Usa B"
+        ],
+        [
+          "19",
+          "Descrizione",
+          "Kit Lumo base",
+          "Kit Lumo esteso",
+          "Modificata",
+          "Da scegliere"
+        ],
+        [
+          "24",
+          "Codice",
+          "VL-042",
+          "—",
+          "Assente in B",
+          "Usa A"
+        ],
+        [
+          "31",
+          "Articolo",
+          "—",
+          "Tazza Vela",
+          "Aggiunta in B",
+          "Usa B"
+        ]
+      ],
+      "form": [
+        "Riga",
+        "Campo",
+        "Valore in A",
+        "Valore in B",
+        "Tipo differenza",
+        "Decisione"
+      ]
+    },
+    {
+      "id": "assemblaggio",
+      "title": "Assemblaggio",
+      "description": "Registra un nuovo confronto e prepara un unico foglio finale, scegliendo le fonti e le regole da applicare.",
+      "metrics": [
+        {
+          "label": "Assemblaggi completati",
+          "value": "12"
+        },
+        {
+          "label": "Bozze",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Risultato",
+        "Confronto origine",
+        "Regola",
+        "Organizzazione",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Inventario Lumo finale",
+          "Riepilogo Lumo",
+          "Preferisci B, conserva valori esclusivi",
+          "Officina Lumo",
+          "Pronto"
+        ],
+        [
+          "Catalogo Vela finale",
+          "Catalogo Vela",
+          "Rivedi ogni conflitto",
+          "Emporio Vela",
+          "Bozza"
+        ]
+      ],
+      "form": [
+        "Risultato",
+        "Confronto origine",
+        "Regola",
+        "Organizzazione",
+        "Stato"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "blu-istituzionale",
+    "fonts": "istituzionale"
+  }
+}
